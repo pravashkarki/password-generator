@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #D5D4D8;
+    background: #1C1C1C;
+}
+
+main {
+    width: 550px;
+    background: #1F2937;
+    padding: 115px 50px;
+    margin: 50px auto 0;
+}
+
+h1 {
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: -0.025em;
+    color: #FFFFFF;
+}
+
+h1 span {
+    display: block;
+    color: #4ADF86;
+}
