@@ -2,7 +2,6 @@ const characters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", 
     "/"];
 
 let passwordLength = 12
-let generateButton = document.getElementById("generateButton")
 
 function getRandomCharacter() {
     let randomChar = Math.floor(Math.random() * characters.length)
@@ -19,8 +18,12 @@ function generateRandomPassword() {
 
 const generatedPasswordOne = generateRandomPassword()
 
-if (generateButton) {
-    generateButton.addEventListener("click", function () {
-        console.log(generatedPasswordOne)
-    })
-}
+let generateButtonEL = document.getElementById("generateButton");
+let passwordOneEl = document.getElementById("passwordOne");
+let passwordOneElTwo = document.getElementById("passwordTwo");
+
+
+generateButtonEL.addEventListener("click", function() {
+    passwordOneEl.textContent = generateRandomPassword()
+    passwordOneElTwo.textContent = generateRandomPassword()
+});

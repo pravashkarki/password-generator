@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Password Gen</title>
-    <script src="script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
@@ -17,8 +16,13 @@
         <p>
             Never use an insecure password again.
         </p>
-        <button id="generateButton">Generate passwords</button>
-
+        <button id="generateButton" class="button">Generate passwords</button>
+        <div class="password-wrapper">
+            <div id="passwordOne" class="password-el"></div>
+            <div id="passwordTwo" class="password-el"></div>
+        </div>
     </main>
+    <script src="script.js"></script>
+
 </body>
 </html>
